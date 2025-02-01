@@ -1,10 +1,3 @@
-//función cargar modal
-(function () {
-  $(function () {
-      $('#ventana-modal').modal()
-  });
-}());
-
 let dayBox = document.getElementById("days");
 let hrBox = document.getElementById("hours");
 let minBox = document.getElementById("minutes");
@@ -34,7 +27,7 @@ function countdown() {
     clearInterval(i);
     document.querySelector(
       ".countdown"
-    ).innerHTML = `<h1>Countdown had expired!</h1>`;
+    ).innerHTML = `<h1>La espera ha terminado, ¡vamos a Disfrutar!</h1>`;
   }
   //If end date is not before today date
   else {
